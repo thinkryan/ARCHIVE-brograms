@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Brograms::Application.config.secret_token = '0159e166f3c9e243e3b7a453c339c555a12497bd81b02ad81a232770858332000c55e9f1d5bfb10994493794673ce8a5ee6b610d6f35094bdf61c44be9138297'
+Brograms::Application.config.secret_token = '9d08ecab4e41ff71aaf2500d6f177199dc207aac2327be0255ecf3a936413fd0bbd3199071db749e10b280709f135feb6415ca04978e44053534a59aa880c9a0'
