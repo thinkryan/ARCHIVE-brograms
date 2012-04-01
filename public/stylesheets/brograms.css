@@ -13,11 +13,11 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
-	body { font: 16px/100% "Proxima" "Helvetica" Arial sans-serif; color: rgba(204,204,204, 1); background: url(<%= asset_path 'brograms/background.jpg' %>) top center; text-align: center; }
+	body { font: 16px/100% "Proxima" "Helvetica" Arial sans-serif; color: rgba(204,204,204, 1); background: url(/images/brograms/background.jpg) top center; text-align: center; }
 	.heading {margin: 20px 0px;}
 	.row { max-width: 600px; min-width: 0;}
 	
-	.well { border: 0px solid rgba(102,102,102, .6); border-width: 1px 0px; padding: 20px 0; background: url(<%= asset_path 'brograms/formgradient.png' %>) top center no-repeat; background-size: 100% auto; margin-bottom: 20px; }
+	.well { border: 0px solid rgba(102,102,102, .6); border-width: 1px 0px; padding: 20px 0; background: url(/images/brograms/formgradient.png) top center no-repeat; background-size: 100% auto; margin-bottom: 20px; }
 	.well.bottom { border-width: 1px 0 0 0; margin-top: 30px; }
 	
 	.red {color: rgba(255,204,204, .4); margin-top: 10px; text-align: left;}
@@ -93,9 +93,9 @@
 	.type-of-brogram li span.custom.checked { border: 3px solid white; position: relative; top: -5px; left: -5px; }
 	form.custom span.custom.radio.checked { background-position: center; }
 	
-	.mini-hf span.custom.radio {background-image: url(<%= asset_path 'brograms/hfmini.png' %>); background-size: 100% 100%; }
-	.mini-ic span.custom.radio {background-image: url(<%=asset_path 'brograms/icmini.png' %>); background-size: 50% 100%; background-repeat: no-repeat; background-position: center;}
-	.mini-lb span.custom.radio {background-image: url(<%= asset_path 'brograms/lbmini.png' %>); background-size: 100% 100%;}
+	.mini-hf span.custom.radio {background-image: url(/images/brograms/hfmini.png); background-size: 100% 100%; }
+	.mini-ic span.custom.radio {background-image: url(/images/brograms/icmini.png); background-size: 50% 100%; background-repeat: no-repeat; background-position: center;}
+	.mini-lb span.custom.radio {background-image: url(/images/brograms/lbmini.png); background-size: 100% 100%;}
 	
 	p.submit { position: relative; top: 35px; z-index: 100; }
 	.submit {max-width: 30%; margin: 0 auto;}
@@ -103,7 +103,7 @@
 	#sendBrogram input.input-text { color: #fff; background: rgba(255,204,204, .3); border: none; margin: 10px 0 10px 0; padding: 10px;}
 	#brogramTime { display: block; width: 180px; margin: 0 auto; }
 	
-	#submitBrogram { width: 180px; height: 43px; background: url(<%= asset_path 'brograms/submit.png' %>) 0 0 no-repeat; border: none; margin: 0; padding: 0; text-indent: -9999px; cursor: pointer; }
+	#submitBrogram { width: 180px; height: 43px; background: url(/images/brograms/submit.png) 0 0 no-repeat; border: none; margin: 0; padding: 0; text-indent: -9999px; cursor: pointer; }
 	#submitBrogram:hover { background-position: 0 -43px; }
 	
 
