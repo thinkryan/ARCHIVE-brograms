@@ -5,7 +5,7 @@ class BrogramsController < ApplicationController
   end
   
   def create
-    
+    BrogramMailer.brogram(params[:brogram]).deliver
   end
   
 end
