@@ -4,4 +4,8 @@ class BrogramsController < ApplicationController
     
   end
   
+  def create
+    
+  end
+  
 end

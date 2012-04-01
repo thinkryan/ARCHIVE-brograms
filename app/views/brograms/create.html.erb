@@ -1,0 +1,46 @@
+ <div class="row">
+	<div class="twelve columns">
+	  
+	  <% if params[:zipcode] == '95008' %>
+		  <!-- Confirmed Code -->
+  		<h2 class="space">Confirmed!</h2>
+  		<h4>Thanks for your brogram!</h4>
+  		<h5>We will attempt to deliver this since you are in the Campbell area.</h5>
+      <!-- <p>Share Your Brogram:
+        <a href="https://twitter.com/share" class="twitter-share-button">Twitter</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+        <a href="facebook.com/sharer.php">Facebook</a>
+      </p> -->
+    <% else %>
+	
+		  <!-- Outside Campbell Code -->
+  		<h2 class="space">Oh Noes!</h2>
+  		<h4>We're sorry!</h4>
+  		<h5>This is a pilot in the Campbell, CA area we will try to add your area someday...</h5>
+      <!-- <p>Share Your Brogram:
+        <a href="https://twitter.com/share" class="twitter-share-button">Twitter</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+        <a href="facebook.com/sharer.php">Facebook</a>
+      </p> -->
+    <% end %>
+	   <hr />
+	</div>
+</div>
+<div class="row">
+	<div class="six columns">
+		<h3>Sender:</h3>
+		<p class="big">Name: <%= params[:brogram][:yourname] %></p>
+		<p class="big">Email: <%= params[:brogram][:youremail] %></p>
+	</div>
+	<div class="six columns">
+		<h3>Recipient:</h3>
+		<p class="big">Name: <%= params[:brogram][:broname] %></p>
+		<p class="big">Address: <%= params[:brogram][:address] %><p>
+		<p class="big"><%= params[:brogram][:city] %>, <%= params[:brogram][:zipcode] %></p>
+		<p class="big">Type: <%= params[:brogram][:type] %></p>
+		<p>
+			<!-- Image of Type Selected -->
+      <!-- <img src="http://placehold.it/200x200"></img> -->
+		</p>
+	</div>
+</div>

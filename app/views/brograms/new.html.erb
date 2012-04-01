@@ -1,0 +1,115 @@
+<div class="row">
+	<div class="twelve columns">
+		<div class="well">
+			<p class="putcenter">Inspired by Bro Code, Brogram is a special message<br/>
+				from one bro to another, delivered by a bro.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- Video -->
+<div class="row">
+	<div class="wrapper">	
+		<div class="flex-video"> 
+			<iframe src="http://www.youtube.com/embed/w8rbCzhUS5Y" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+<br />
+	
+<!-- Images -->	
+<div class="row">
+	<div class="twelve columns">
+		<p class="options">Three browesome options to choose from:</p>
+	</div>
+</div>
+<div class="row">
+	<div class="four columns">
+		<p><%= image_tag 'brograms/hifive.png' %></p>	
+	</div>
+	<div class="four columns">
+		<p><%= image_tag 'brograms/icebox.png' %></p>	
+	</div>
+	<div class="four columns">
+		<p><%= image_tag 'brograms/lovebox.png' %></p>
+	</div>
+</div>
+
+<!-- Web Form -->
+
+<div class="row">
+	<div class="twelve columns">
+	  <%= form_tag brograms_path, :class => 'nice custom well bottom' %>
+		<form class="nice custom well bottom" action="confirmation.html" id="sendBrogram">
+	  		<h3 class="send">Send a Brogram!</h3>
+			<div class="row">
+		   		<div class="six columns">
+					<p>  
+						<label for="yourname"></label>  
+						<input class="input-text expand" type="text" name="brogram[yourname]" id="yourname" placeholder="Your Name"/> 
+		    		</p> 
+    		</div> 
+    	   		<div class="six columns">
+		    		<p class="input-text">  
+		    			<label for="youremail"></label>  
+						<input class="input-text expand" type="text" name="brogram[youremail]" id="youremail" placeholder="Your Email" /> 
+		    		</p> 
+    	   		</div>
+    	  	</div>
+    	  	<div class="row">
+	    		<p class="choice">Send my bro this brogram:</p> 
+	    		<ul class="type-of-brogram">
+	    			<li class="mini-hf"><label for="five"><input type="radio" name="brogram[type]" value="High Five" CHECKED id="five" style="display: none;" /><span class="custom radio selected"></span></label></li>
+	    			<li class="mini-ic"><label for="ice"><input type="radio" name="brogram[type]" value="Ice" id="five" style="display: none;" /><span class="custom radio"></span></label></li>
+	    			<li class="mini-lb"><label for="romance"><input type="radio" name="brogram[type]" value="Love Box" id="five" style="display: none;" /><span class="custom radio"></span></label></li>
+	    		</ul>
+    		</div>
+    		<div class="row">
+		   		<div class="six columns">
+		    		<p>  
+		    			<label for="broname"></label>  
+						<input class="input-text expand" type="text" name="brogram[broname]" id="broname" placeholder="Bro's Name" /> 
+		    		</p> 
+		    	</div>
+		    	<div class="six columns">
+		    		<p>  
+		    			<label for="broname"></label>  
+						<input class="input-text expand" type="text" name="brogram[broemail]" id="broemail" placeholder="Bro's Email" /> 
+		    		</p>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="six columns">
+		    		<p>  
+						<label for="address"></label> 
+						<input class="input-text expand" type="text" name="brogram[address]" id="address" placeholder="Bro's Address" /> 
+		    		</p>
+		    	</div>
+		    	<div class="four columns">
+						<label for="city"></label> 
+						<input type="text" class="expand small input-text" name="brogram[city]" id="city" placeholder="City" /> 
+		    		
+		    	</div>
+		    	<div class="two columns"> 
+						<label for="zipcode"></label> 
+						<input type="text" class="expand small input-text" name="brogram[zipcode]" id="zipcode" placeholder="Zip Code" />  
+		    	</div>
+    		</div>
+        <!-- <p> 
+            <label for="time">Time</label>  
+            <select id="brogramTime">
+            <option>This is a dropdown</option>
+            <option>This is another option</option>
+            <option>Look, a third option</option>
+          </select>
+          </p> -->
+    		<p class="submit">  
+    			<input type="submit" id="submitBrogram" /> 
+        		<!--<input class="large nice radius button" type="submit" value="Submit" /> --> 
+    		</p> 
+    		
+    		<hr />
+		</form>	
+	</div>	
+</div>
