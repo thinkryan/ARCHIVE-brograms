@@ -55,5 +55,8 @@ module Brograms
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = YAML.load(File.read(File.expand_path('../smtp_settings.yml', __FILE__)))[Rails.env].symbolize_keys
   end
 end

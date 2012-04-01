@@ -1,0 +1,16 @@
+development:
+  address: "smtp.gmail.com"
+  port: 587
+  domain: 'yourapp.com'
+  user_name: 'name@yourapp.com'
+  password: 'secretpassword'
+  authentication: 'plain'
+  enable_starttls_auto: true
+test:
+  address: "smtp.gmail.com"
+  port: 587
+  domain: 'yourapp.com'
+  user_name: 'name@yourapp.com'
+  password: 'secretpassword'
+  authentication: 'plain'
+  enable_starttls_auto: true
